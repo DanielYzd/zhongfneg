@@ -1,0 +1,90 @@
+/* packageD/pages/totalrecord.wxss */
+.tab-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  justify-content: center;
+}
+.tab-left, .tab-right{
+  flex: 1;
+  font-size: 25rpx;
+  color: #000;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.tab-active{
+  border-bottom: 2px solid #3D79EC;
+  color: #3D79EC;
+}
+.totalrecord .content{
+  padding:0 30rpx;
+}
+.totalrecord .addimg{
+  width:150rpx;
+  height:150rpx;
+  position: fixed;
+  bottom: 20rpx;
+  right:20rpx;
+}
+.totalrecord .sort{
+  height:260rpx;
+  width:100%;
+  background-color: #fff;
+  box-shadow: 0 0 4rpx 0 rgb(116, 170, 231);
+  margin-top:20rpx;
+}
+.totalrecord .sort .date{
+  color:#BDBDBD;
+  font-size: 25rpx;
+  margin-left:10rpx;
+}
+.totalrecord .sort image{
+  width:60rpx;
+  height:60rpx;
+  float: right;
+  margin:40rpx 50rpx 0 0;
+}
+.totalrecord .sort .sort_box{
+  margin-top:70rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.totalrecord .sort .sort_box .item{
+  display: flex;
+  flex-direction: column;
+}
+.totalrecord .sort .sort_box .val{
+  font-size: 50rpx;
+  color:#384365;
+}
+.totalrecord .sort .sort_box text{
+  color: #BDBDBD;
+  text-align: center;
+  font-size: 25rpx;
+}
+.pick{
+  display: flex;
+  margin-top:5rpx;
+  align-items: center;
+  border:1px solid #ECF3FE;
+  padding:10rpx;
+  border-radius: 20%;
+ width:120rpx;
+}
+.picktxt{
+  color:#5C5C5C;
+  font-size: 25rpx;
+  font-weight: bold;
+ 
+}
+.sanjiao{
+    width:0;
+    height:0;
+    border-top:10rpx solid #5C5C5C;
+    border-left:8rpx solid transparent;
+    border-right:8rpx solid transparent;
+    border-bottom:0;
+}

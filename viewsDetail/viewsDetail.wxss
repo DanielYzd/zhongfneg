@@ -1,0 +1,18 @@
+/* viewsDetail/viewsDetail.wxss */
+.newsdetail{
+padding:40rpx;
+}
+.newsdetail .topic{
+  color:#3A415F;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.newsdetail .date{
+  color:#BCBCBC;
+  font-size: 20rpx;
+}
+.newsdetail .content{
+  margin-top:40rpx;
+  color:#797A7A;
+  font-size: 30rpx;
+}

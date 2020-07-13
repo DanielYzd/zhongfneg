@@ -1,0 +1,11 @@
+<!--historymessage/historymessage.wxml-->
+<view class="hismessage">
+	<view wx:for="{{arr}}" class="message" data-value="{{item}}" bindtap="jump">
+		<view class="head">
+			<image src="../../images/my.png" class="img"></image>
+			<view>{{item.docname}}</view>
+		</view>
+
+		<view class="num"></view>
+	</view>
+</view>

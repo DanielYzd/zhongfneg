@@ -1,0 +1,20 @@
+<!--packageA/pages/tel.wxml-->
+<view class="tel">
+	<view class="title">专家号 ({{telArr1.length}}位)</view>
+	<block wx:for="{{telArr1}}" wx:key="index">
+		<view style="border-bottom:1px solid #F3F3F3;height:70rpx; margin-top:30rpx;">
+			<text style="line-height:50rpx;">{{item.dodoctname}}</text>
+			<image style="height:50rpx;width:50rpx;float:right;" src="../../images/phone.png" data-tel="{{item.telephone}}" bindtap="tel"></image>
+		</view>
+	</block>
+	<view class="title" style="margin-top:30rpx;">普通号 ({{telArr2.length}}位)</view>
+	<block wx:for="{{telArr2}}" wx:key="index">
+		<view style="border-bottom:1px solid #F3F3F3;height:70rpx; margin-top:30rpx;">
+			<text style="line-height:50rpx;">{{item.dodoctname}}</text>
+			<image style="height:50rpx;width:50rpx;float:right;" src="../../images/phone.png" data-tel="{{item.telephone}}" bindtap="tel"></image>
+		</view>
+	</block>
+	<modal hidden="{{hiddenmodalput}}" title="确认或输入本机号码" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+		<input style="margin-top:30rpx;font-size:40rpx;color:#000" value="{{phonea}}" bindinput='handleInputChange'  data-modal='phonea' type='number' placeholder="请输入本机手机号码" auto-focus />
+	</modal>
+</view>

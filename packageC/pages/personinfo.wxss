@@ -1,0 +1,10 @@
+.personinfo{
+  padding-left:20rpx;
+}
+.personinfo .section{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #F4F4F4;
+  height:100rpx;
+  align-items: center;
+}

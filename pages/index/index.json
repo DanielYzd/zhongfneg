@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "navigationBarBackgroundColor": "#3063EB",
+  "navigationBarTitleText": "中风预防精灵",
+  "navigationBarTextStyle": "white"
+}

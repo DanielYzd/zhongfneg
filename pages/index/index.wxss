@@ -1,0 +1,80 @@
+/**index.wxss**/
+.index{
+  padding-bottom: 100rpx;
+}
+.index .pp{
+  position: absolute;
+  top:0;
+  height:150rpx;
+  width: 100%;
+  background-color: #3063EB;
+}
+.index .swiper{
+  margin:20rpx;
+  height:340rpx;
+}
+.swiper .item_img{
+  width:100%;
+
+  height:100%;
+}
+.sort{
+  margin-top: 30rpx;
+}
+.sort_box{
+  display: flex;
+  flex-direction: row;
+  margin:0 30rpx;
+  justify-content: space-around;
+}
+.sort_box .item image{
+  width:150rpx;
+  height:150rpx;
+}
+.sort_box .item text{
+  font-size: 24rpx;
+  color: #7E7E7E;
+  white-space: nowrap;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: -20rpx;
+}
+.messagetitle{
+  display: flex;
+  align-items: center;
+  margin-top:50rpx;
+  margin-right:50rpx;
+  justify-content: space-between;
+}
+.bod{
+  height:50rpx;
+  line-height: 60rpx;
+  width: 10rpx;
+  background-color: #3063EB;
+  border-radius: 20%;
+  margin-left:20rpx;
+ 
+}
+.txt{
+  margin-left:20rpx;
+  color: #707070;
+}
+.newslist{
+  margin:40rpx 40rpx 0 20rpx;
+  padding-left: 20rpx;
+  border-left: 1px dashed #EDEDED;
+}
+.newslist .topic{
+  font-size:30rpx;
+  color:#3A415F;
+}
+.newslist .date{
+  font-size:20rpx;
+  color:#8F9092;
+}
+.echart_panel{
+  margin:0 auto;
+  height:400rpx;
+  width:400rpx;
+}

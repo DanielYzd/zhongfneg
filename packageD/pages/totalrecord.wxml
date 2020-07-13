@@ -1,0 +1,65 @@
+<!--packageD/pages/totalrecord.wxml-->
+<view class="totalrecord">
+	<view class='tab-wrapper'>
+		<view id='tableft' class='tab-left {{currentTab === 0 ? "tab-active":""}}' data-current="0" bindtap='switchTab'>记录表</view>
+		<view id='tableright' class='tab-right {{currentTab === 1 ? "tab-active":""}}' data-current="1" bindtap='switchTab'>曲线</view>
+	</view>
+	<view class='content'>
+		<view wx:if='{{currentTab === 0}}'>
+			<block wx:for="{{list}}" wx:key="index">
+				<view class="sort">
+					<text class="date">{{item.sdate}}</text>
+					<image src="../../images/record1.png"></image>
+					<view class="sort_box">
+						<view class="item">
+							<view class="val">{{item.fbs}}</view>
+							<text>空腹血糖值</text>
+						</view>
+						<view class="item">
+							<view class="val">{{item.diastolic}}/{{item.systolic}}</view>
+							<text>血压</text>
+						</view>
+						<view class="item">
+							<view class="val">{{item.cardiac}}</view>
+							<text>心率</text>
+						</view>
+						<view class="item">
+							<view class="val">{{item.bmi}}</view>
+							<text>BMI</text>
+						</view>
+					</view>
+				</view>
+			</block>
+
+		</view>
+		<view wx:if='{{currentTab === 1}}'>
+			<view>
+				<picker value="{{arrar[index]}}" range="{{array}}" bindchange="bindPickChange">
+					<view class="pick">
+						<view class="sanjiao"></view>
+						<view class="picktxt">最近{{array[index]}}天</view>
+					</view>
+				</picker>
+			</view>
+			<view class="echat">
+				<text style="margin-bottom:-50rpx">血糖分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart1" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>血压分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart2" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>心率分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart3" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>BMI分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart4" ec="{{ ec }}"></ec-canvas>
+				</view>
+			</view>
+		</view>
+	</view>
+	<image src="../../images/daily3.png" class="addimg" bindtap="jump"></image>
+</view>

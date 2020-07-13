@@ -1,0 +1,55 @@
+
+<view class="record">
+  <view class="pp"></view>
+  <view class="recordcontent">
+      <view class="time">{{record.sdate}}</view>
+      <image src="../../images/record1.png" style="width:50rpx;height:50rpx;position:absolute;top:70rpx;right:90rpx">
+      </image>
+      <view class="data">
+        <view class="recorditem">
+          <view class="recordvalue">{{record.fbs}}</view>
+          <text>空腹血糖</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.diastolic}}/{{record.systolic}}</view>
+          <text>血压</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.cardiac}}</view>
+          <text>心率</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.bmi}}</view>
+          <text>BMI</text>
+        </view>
+      </view>
+      <view class="recordtip">{{record.bz}}</view>
+      	<view>
+				<picker value="{{arrar[index]}}" range="{{array}}" bindchange="bindPickChange">
+					<view class="pick">
+						<view class="sanjiao"></view>
+						<view class="picktxt">最近{{array[index]}}天</view>
+					</view>
+				</picker>
+			</view>
+      <view class="echat">
+       	<text style="margin-bottom:-50rpx">血糖分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart1" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>血压分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart2" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>心率分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart3" ec="{{ ec }}"></ec-canvas>
+				</view>
+				<text>BMI分析曲线</text>
+				<view style="width:100%;height:400rpx;">
+					<ec-canvas id="mychart4" ec="{{ ec }}"></ec-canvas>
+				</view>
+      </view>
+      <button type="primary" bindtap="finish" style="margin-bottom:30rpx;background-color:#4072ED;">完成</button>
+    </view>
+    </view>

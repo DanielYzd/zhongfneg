@@ -1,0 +1,14 @@
+/* viewsDetail/viewslist.wxss */
+.newslist{
+  margin:40rpx 40rpx 0 20rpx;
+  padding-left: 20rpx;
+  border-left: 1px dashed #EDEDED;
+}
+.newslist .topic{
+  font-size:30rpx;
+  color:#3A415F;
+}
+.newslist .date{
+  font-size:20rpx;
+  color:#8F9092;
+}

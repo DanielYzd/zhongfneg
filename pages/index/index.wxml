@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="index">
+	<view class="pp"></view>
+	<swiper class="swiper" autoplay="true" interval="3000" duration="1000" indicator-dots="true" indicator-active-color="#cdcdcd" circular="false">
+		<block wx:for="{{imgs}}" wx:key="index">
+			<swiper-item>
+				<image src="{{item}}" class="item_img"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="sort">
+		<view class="sort_box">
+			<block wx:for="{{indeximgs}}" wx:key="index">
+				<view class="item" data-index="{{index}}" bindtap="tabjump">
+					<image src="{{item.src}}"></image>
+					<text>{{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view>
+		<view class="messagetitle">
+		<view style="display:flex;">
+				<view class="bod"></view>
+			<view class="txt">个人健康消息</view>
+		</view>
+		
+			<image src="../../images/refresh.png" style="width:30rpx;height:30rpx;" bindtap="refresh"></image>
+		</view>
+	</view>
+	<view class="echart_panel">
+	 <ec-canvas id="mychart"  canvas-id="mychart-bar" ec="{{ ec }}" bindtap="addnew"></ec-canvas>
+	</view>
+	<view style="display:flex; margin-top: 50rpx; justify-content: space-between;">
+		<view style="display:flex;">
+			<view class="bod"></view>
+			<view class="txt">新闻资讯</view>
+		</view>
+		<text style="color:#ddd;font-size:28rpx;margin-right:30rpx;" bindtap="viewList">查看更多 ></text>
+	</view>
+	<block wx:for="{{newsData}}" wx:key="index">
+	<view class="newslist" data-content='{{item}}' bindtap="viewNews">
+		<view class="topic">
+			{{item.newstopic}}
+		</view>
+		<view class="date">{{item.sdate}}</view>
+	</view>
+	</block>
+</view>

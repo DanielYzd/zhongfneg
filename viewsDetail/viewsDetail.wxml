@@ -1,0 +1,6 @@
+<!--viewsDetail/viewsDetail.wxml-->
+<view class="newsdetail">
+	<view class="topic">{{options.newstopic}}</view>
+	<view class="date">{{options.sdate}}</view>
+	<view class="content">{{options.content}}</view>
+</view>

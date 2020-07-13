@@ -1,0 +1,19 @@
+
+<view class="tel">
+  <view class="title">专家号  ({{telArr1.length}}位)</view>
+    <block wx:for="{{telArr1}}" wx:key="index">
+      <view style="border-bottom:1px solid #F3F3F3;height:70rpx; margin-top:30rpx;">
+        <text style="line-height:50rpx;color:#383F5E">{{item.dodoctname}}</text> 
+        <image style="height:50rpx;width:50rpx;float:right;" src="../../images/telchat.png"
+        data-item="{{item}}" bindtap="tomessage"></image>
+      </view>
+    </block>
+  <view class="title" style="margin-top:30rpx;">普通号  ({{telArr2.length}}位)</view>
+  <block wx:for="{{telArr2}}" wx:key="index">
+      <view style="border-bottom:1px solid #F3F3F3;height:70rpx; margin-top:30rpx;">
+        <text style="line-height:50rpx; color:#383F5E">{{item.name}}</text> 
+        <image style="height:50rpx;width:50rpx;float:right;" src="../../images/telchat.png"
+          data-tel="{{item.id}}" bindtap="message"></image>
+      </view>
+    </block>
+</view>

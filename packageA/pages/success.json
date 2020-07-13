@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "navigationBarBackgroundColor": "#3063EB",
+  "navigationBarTitleText": "提交成功",
+  "navigationBarTextStyle": "white"
+}

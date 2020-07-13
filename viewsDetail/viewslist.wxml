@@ -1,0 +1,12 @@
+<!--viewsDetail/viewslist.wxml-->
+
+<view>
+	<block wx:for="{{newsData}}" wx:key="index">
+	<view class="newslist" data-content='{{item}}' bindtap="viewNews">
+		<view class="topic">
+			{{item.newstopic}}
+		</view>
+		<view class="date">{{item.sdate}}</view>
+	</view>
+	</block>
+</view>

@@ -1,0 +1,65 @@
+/* pages/personcenter/personcenter.wxss */
+.my .pp{
+  height:100rpx;
+  width: 100%;
+  background-color: #3063EB;
+}
+.mycontain{
+  padding:0 30rpx;
+}
+.my  .userinfo{
+  margin-top:-30rpx;
+  background-color: #fff;
+  height: 150rpx;
+  width:100%;
+  box-shadow: 0 0 4px -0 rgb(116, 170, 231);
+  display: flex;
+ align-items: center;
+}
+.userinfo image{
+  width:130rpx;
+  height:130rpx;
+  margin-right: 30rpx;
+  margin-left:30rpx;
+}
+.userinfo .content{
+
+}
+.userinfo .content .name{
+  display: block;
+  color:#2F3656;
+  font-weight: bold;
+}
+.userinfo .content .city{
+  display: block;
+  color:#cdcdcd;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.tool{
+  border-left: 5px solid #3063EB;
+  padding-left:30rpx;
+  margin-top:60rpx;
+  color:#2F3656;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.mycontain .sort .item{
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:30rpx;
+  height:120rpx;
+}
+.mycontain .sort .item view {
+  display: flex;
+  align-items: center;
+}
+.mycontain .sort .item view image{
+  margin-right: 20rpx;
+}
+.mycontain .sort .item image{
+  width:40rpx;
+  height:50rpx;
+}

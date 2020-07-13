@@ -1,0 +1,8 @@
+/* packageA/pages/tel.wxss */
+.tel{
+  margin:30rpx 30rpx 0 30rpx;
+}
+.title{
+  color:#AFAFAF;
+  font: 20rpx;
+}

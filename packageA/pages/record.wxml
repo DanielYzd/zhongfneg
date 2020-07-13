@@ -1,0 +1,56 @@
+<view class="record">
+  <view class="pp"></view>
+  <view class="recordcontent">
+      <view class="time">{{record.sdate}}</view>
+      <image src="../../images/record1.png" style="width:50rpx;height:50rpx;position:absolute;top:70rpx;right:90rpx">
+      </image>
+      <view class="data">
+        <view class="recorditem">
+          <view class="recordvalue">{{record.fbs}}</view>
+          <text>空腹血糖</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.diastolic}}/{{record.systolic}}</view>
+          <text>血压</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.cardiac}}</view>
+          <text>心率</text>
+        </view>
+        <view class="recorditem">
+          <view class="recordvalue">{{record.bmi}}</view>
+          <text>BMI</text>
+        </view>
+      </view>
+      <view class="recordtip">
+      <image src="../../images/record2.png" style="width:30rpx;height:30rpx;"></image>
+      请输入最新数据</view>
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+          <label>空腹血糖值</label>
+          <input type="number" name="fbs" placeholder="请输入空腹血糖值"  bindblur="inputFN"></input>
+        </view>
+         <view class="section">
+          <label>舒张压</label>
+          <input type="number" name="diastolic" placeholder="请输入舒张压"  bindblur="inputFN"></input>
+        </view>
+         <view class="section">
+          <label>收缩压</label>
+          <input type="number" name="systolic" placeholder="请输入舒张压"  bindblur="inputFN"></input>
+        </view>
+         <view class="section">
+          <label>心率值</label>
+          <input type="number" name="cardiac" placeholder="请输入心率值"></input>
+        </view>
+         <view class="section">
+          <label>身高（CM）</label>
+          <input type="number" name="height" placeholder="请输入身高"></input>
+        </view>
+         <view class="section">
+          <label>体重（KG）</label>
+          <input type="number" name="weight" placeholder="请输入体重"></input>
+        </view>
+        <button form-type="submit" type="primary" style="margin-top:50rpx;background-color:#4072ED;">提交</button>
+      </form>
+  </view>
+</view>

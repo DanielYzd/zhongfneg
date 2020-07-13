@@ -1,0 +1,79 @@
+<!--packageC/pages/personinfo.wxml-->
+<view class="personinfo">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="section">
+              <label>姓名</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>年龄</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>性别</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>是否在合作医院就诊过</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>就诊医院</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>门诊号</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>签约医生</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>紧急联系人</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>紧急联系电话</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>居住地</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>身高（CM）</label>
+              <input name="input" placeholder=""  bindblur="inputFN"></input>
+            </view>
+             <view class="section">
+              <label>体重（KG）</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>运动量</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>睡眠资料</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>饮食习惯</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>是否有吸烟史</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>是否有饮酒史</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <view class="section">
+              <label>是否有脑卒中史</label>
+              <input name="input" placeholder=""></input>
+            </view>
+            <button type="primary" style="background-color:#4072ED;margin:20rpx auto">编辑</button>
+      </form>
+</view>
+

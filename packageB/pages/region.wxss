@@ -1,0 +1,38 @@
+/* packageB/pages/region.wxss */
+.region{
+}
+.region text{
+  display: block;
+  color:#fff;
+  text-align: left;
+}
+
+.regioncontent{
+  width:80%;
+  position: absolute;
+  top: 380rpx;
+  height:600rpx;
+  border-radius: 5%;
+  background-color: #fff;
+  margin-left:10%;
+ box-shadow: 0 0 4px -0 rgb(116, 170, 231);
+ display: flex;
+ flex-direction: column;
+}
+.item{
+  flex:1;
+  border-bottom:1px solid #cdcdcd;
+  display: flex;
+ align-items: center;
+ padding:0 60rpx;
+ justify-content: space-between;
+}
+.item text{
+  color:#242C4D;
+  font-size: 40rpx;
+}
+.item image{
+  width:80rpx;
+  height:80rpx;
+  float:right;
+}

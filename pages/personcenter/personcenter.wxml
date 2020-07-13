@@ -1,0 +1,50 @@
+<!--pages/personcenter/personcenter.wxml-->
+<view class="my">
+    <view class="pp"></view>
+    <view class="mycontain">
+          <view class="userinfo">
+                <button open-type="getUserInfo" type="primary" wx:if="{{!hasUserInfo && canIUse}}"
+                       bindgetuserinfo="getUserInfo">微信登录</button>
+                <block wx:else>
+                <image src="{{userInfo.avatarUrl}}" bindtap="view"></image>
+                <view class="content">
+                <text class="name">{{userInfo.nickName}}</text>
+                <text class="city">{{userInfo.city}}</text>
+                </view>
+                </block>
+          </view>
+          <view class="tool">我的工具</view>
+          <view class="sort">
+              <view class="item" data-index="0" bindtap="jump">
+                  <view>
+                       <image src="../../images/mine1.png"></image>
+                       <text>日常用药记录</text>
+                  </view>
+                  <image src="../../images/mine5.png" ></image>
+              </view>
+              <view class="item" data-index="1" bindtap="jump">
+                  <view>
+                       <image src="../../images/mine2.png"></image>
+                       <text>风险记录</text>
+                  </view>
+                  <image src="../../images/mine5.png" ></image>
+              </view>
+              <view class="item" data-index="2" bindtap="jump">
+                  <view>
+                       <image src="../../images/mine3.png"></image>
+                       <text>筛查记录</text>
+                  </view>
+                  <image src="../../images/mine5.png" ></image>
+              </view>
+              <view class="item" data-index="3" bindtap="jump">
+                  <view>
+                       <image src="../../images/mine4.png"></image>
+                       <text>重新评测</text>
+                  </view>
+                  <image src="../../images/mine5.png" ></image>
+              </view>
+          </view>
+    </view>
+    
+</view>
+

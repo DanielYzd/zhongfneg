@@ -1,0 +1,84 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/personcenter/personcenter",
+    "pages/authorize",
+    "viewsDetail/viewsDetail",
+    "viewsDetail/viewslist",
+    "message/message"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/tel",
+        "pages/record",
+        "pages/success"
+      ]
+    },
+    {
+      "root": "packageB",
+      "name": "pack2",
+      "pages": [
+        "pages/region",
+        "pages/urgent",
+        "pages/telchat"
+      ]
+    },
+    {
+      "root": "packageC",
+      "name": "pack3",
+      "pages": [
+        "pages/step1",
+        "pages/step2",
+        "pages/step3",
+        "pages/personinfo"
+      ]
+    },
+    {
+      "root": "packageD",
+      "name": "pack4",
+      "pages": [
+        "pages/daily",
+        "pages/adddaily",
+        "pages/totalrecord",
+        "pages/checkrecord"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab_home_normal@2x.png",
+        "selectedIconPath": "images/tab_home_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/tab_msg_normal@2x.png",
+        "selectedIconPath": "images/tab_msg_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/personcenter/personcenter",
+        "text": "我的",
+        "iconPath": "images/tab_mine_normal@2x.png",
+        "selectedIconPath": "images/tab_mine_selected@2x.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000
+  }
+}

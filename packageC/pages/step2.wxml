@@ -1,0 +1,79 @@
+<!--packageC/pages/step1.wxml-->
+<view class="xxpg">
+	<view class="fixhead">
+		<view class="blueblock"></view>
+		<view class="tip">
+			<image src="../../images/infobtn-select.png" style="height:50rpx;width:50rpx;display:block;"></image>
+			<image src="../../images/info-select.png" style="width:30%;height:10rpx;"></image>
+			<image src="../../images/infobtn-select.png" style="height:50rpx;width:50rpx;"></image>
+			<image src="../../images/info-normal.png" style="width:30%;height:10rpx;"></image>
+			<image src="../../images/infobtn-normal.png" style="height:50rpx;width:50rpx;"></image>
+		</view>
+		<view style="position:absolute;"></view>
+	</view>
+	<view class="floattext">
+		<text class="step1">1</text>
+		<text class="step2">基础信息</text>
+		<text class="step3">2</text>
+		<text class="step4">生活习惯</text>
+		<text class="step5">3</text>
+		<text class="step6">检测指数</text>
+	</view>
+	<view class="content">
+		<form bindsubmit="formSubmit" bindreset="formReset">
+			<view class="section">
+				<label>身高（CM）</label>
+				<input name="height" type="number" value="{{step2.height}}" placeholder="请输入身高" bindblur="inputFN1"></input>
+			</view>
+			<view class="section">
+				<label>体重（KG）</label>
+				<input name="weight" placeholder="请输入体重" type="number" value="{{step2.weight}}" bindblur="inputFN2"></input>
+			</view>
+			<view class="section">
+				<label>BMI</label>
+				<input name="bmi" placeholder="输入身高体重自动计算" value="{{step2.bmi}}" bindblur="inputFN" disabled></input>
+			</view>
+			<view class="section">
+				<label>运动量</label>
+				<picker  bindchange="bindPickerChange_sports" value="{{sportArray[index_sports]}}" range="{{sportArray}}">
+					<input name="exercise" placeholder="请选择运动量" value="{{step2.exercise}}" disabled></input>
+				</picker>
+			</view>
+			<view class="section">
+				<label>睡眠质量</label>
+				<picker  bindchange="bindPickerChange_sleep" value="{{sleepArray[index_sleep]}}" range="{{sleepArray}}">
+					<input name="sleepquality" placeholder="请选择睡眠质量" value="{{step2.sleepquality}}" disabled></input>
+				</picker>
+			</view>
+			<view class="section">
+				<label>饮食习惯</label>
+				<picker  bindchange="bindPickerChange_diet" value="{{dietArray[index_diet]}}" range="{{dietArray}}">
+					<input name="habit" placeholder="请选择饮食习惯" value="{{step2.habit}}" disabled></input>
+				</picker>
+			</view>
+			<view class="section">
+				<label>是否有吸烟史</label>
+				<switch name="smoking" checked="{{step2.smoking}}"></switch>
+			</view>
+			<view class="section">
+				<label>是否有酒史</label>
+				<switch name="wine" checked="{{step2.wine}}"></switch>
+			</view>
+				<view class="section">
+				<label>是否有脑卒中家族史</label>
+				<switch name="familyhis" checked="{{step2.familyhis}}"></switch>
+			</view>
+				<view class="section">
+				<label>是否有脑卒中史</label>
+				<switch name="cerebralstroke" checked="{{step2.cerebralstroke}}"></switch>
+			</view>
+			<view class="section">
+				<label>血脂是否异常</label>
+				<switch name="bloodfat" checked="{{step2.bloodfat}}"></switch>
+			</view>
+			<button type="primary" form-type="submit" style="background-color:#3063EB;margin:30rpx auto;">下一步</button>
+		</form>
+
+	</view>
+
+</view>

@@ -1,0 +1,26 @@
+<!--packageB/pages/region.wxml-->
+<view class="region">
+    <image src="../../images/remote.png" style="height:500rpx;width:100%;">
+    </image>
+    <view style="margin-top:-400rpx; padding-left:100rpx;">
+        <text>服务介绍</text> 
+        <text>根据当前所需咨询进行在线沟通</text>
+        <text>1.点击相应咨询即可进入聊天界面</text>
+        <text>2.如果无法及时回复，请耐心等待</text>
+        <text>3.欢迎使用本公司咨询软件</text>
+    </view>
+    <view class="regioncontent">
+        <view class="item">
+          <text>心血管科学类</text>
+          <image src="../../images/remote1.png" data-index="0" bindtap="change"></image>
+        </view>
+        <view class="item">
+          <text>内外科学类</text>
+          <image src="../../images/remote2.png" data-index="1" bindtap="change"></image>
+        </view>
+        <view class="item">
+          <text>骨科科学类</text>
+          <image src="../../images/remote3.png" data-index="2" bindtap="change"></image>
+        </view>
+    </view>
+</view>
